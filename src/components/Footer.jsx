@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Award } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram, Award } from 'lucide-react';
 import { companyInfo } from '../data/mock';
 
 const Footer = () => {
@@ -127,14 +127,29 @@ const Footer = () => {
               <h4 className="font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-3">
                 {[
-                  { Icon: Facebook, href: '#' },
-                  { Icon: Twitter, href: '#' },
-                  { Icon: Linkedin, href: '#' },
-                  { Icon: Instagram, href: '#' }
-                ].map(({ Icon, href }, index) => (
+                  {
+                    Icon: Facebook,
+                    label: 'Facebook',
+                    href: 'https://www.facebook.com/people/Shoolinsecurityservices/61567327042255/'
+                  },
+                  {
+                    Icon: Linkedin,
+                    label: 'LinkedIn',
+                    href: 'https://www.linkedin.com/company/shoolin-security-services'
+                  },
+                  {
+                    Icon: Instagram,
+                    label: 'Instagram',
+                    href: 'https://www.instagram.com/shoolinsecurityservices/'
+                  }
+                ].map(({ Icon, href, label }, index) => (
                   <a
                     key={index}
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    title={label}
                     className="w-10 h-10 bg-white/10 hover:bg-amber-500 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
                   >
                     <Icon className="w-5 h-5" />
@@ -176,12 +191,12 @@ const Footer = () => {
               © {new Date().getFullYear()} Shoolin Security Services. All rights reserved.
             </p>
             <div className="flex items-center space-x-6">
-              <a href="#" className="hover:text-amber-400 transition-colors">
+              <Link to="/privacy-policy" className="hover:text-amber-400 transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="hover:text-amber-400 transition-colors">
+              </Link>
+              <Link to="/terms-of-service" className="hover:text-amber-400 transition-colors">
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>

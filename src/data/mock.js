@@ -2,13 +2,14 @@
 
 export const companyInfo = {
   name: "Shoolin Security Services",
-  tagline: "PROTECTED YOU FEEL",
+  tagline: "Your Safety, Our Priority",
   description: "The Leading Security and Housekeeping Service Provider in Uttarakhand",
   established: "Since 2019",
   email: "shoolinss1965@gmail.com",
   phones: ["+91-9456302658", "+91-7983760848", "+91-7906378372"],
-  address: "2A Aambagh, Garhi Cantt Opp. RIMC Gate, Dehradun, Uttarakhand - 248003",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Rashtriya+Indian+Military+College+RIMC+Garhi+Cantt+Dehradun+Uttarakhand+248003",
+  address: "Krishna Vihar, 11 A, Garhi Cantt Rd, Opposite RIMC Main Gate, Above Pizza Italia, Garhi Cantonment, Nimbuwala, Dehradun, Uttarakhand - 248003",
+  googleMapsUrl: "https://share.google/SIE7aLFpfJThl2pqT",
+  googleMapsEmbedUrl: "https://www.google.com/maps?q=Shoolin%20Security%20Services%2C%20Krishna%20Vihar%2C%2011%20A%2C%20Garhi%20Cantt%20Rd%2C%20Opposite%20RIMC%20Main%20Gate%2C%20Dehradun%2C%20Uttarakhand%20248003&output=embed",
   mission: "It is our mission to provide our clients with the kind of security they require in the most efficient and cost effective and comprehensive possible manner. Because of this Shoolin Security Services is structured and organized in such a way that highest degree of service will be provided to all its clients.",
   businessHours: {
     weekdays: "Monday – Saturday: 10:00 AM – 5:00 PM",

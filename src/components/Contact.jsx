@@ -162,6 +162,20 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+
+            {/* Google Maps Embed */}
+            <div className="mt-8 rounded-xl overflow-hidden shadow-lg border border-gray-200">
+              <iframe
+                title="Shoolin Security Services location on Google Maps"
+                src={companyInfo.googleMapsEmbedUrl}
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
 
           {/* Contact Form */}

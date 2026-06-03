@@ -5,8 +5,8 @@ const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   
-  const whatsappNumber = '917983760848'; // Updated number
-  const message = 'Hello! I would like to inquire about your security services.';
+  const whatsappNumber = '919456302658'; // Primary contact number
+  const message = 'Hello, I would like to enquire about your security services.';
 
   useEffect(() => {
     // Show button after a short delay for better UX
@@ -27,7 +27,7 @@ const WhatsAppButton = () => {
     <>
       {/* WhatsApp Floating Button */}
       <div
-        className={`fixed bottom-6 right-6 z-50 transition-all duration-500 ${
+        className={`fixed bottom-[90px] right-6 z-50 transition-all duration-500 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >

@@ -3,8 +3,18 @@ import Services from '../components/Services';
 import Gallery from '../components/Gallery';
 import { Shield, Users, AlertTriangle } from 'lucide-react';
 import { crisisManagementTeam } from '../data/mock';
+import { useSeo } from '../hooks/useSeo';
+import { servicesSchema } from '../data/structuredData';
 
 const ServicesPage = () => {
+  useSeo({
+    title: 'Our Services | Shoolin Security Services',
+    description:
+      'Explore Shoolin Security Services: security guard force, VIP and executive protection, mobile roving patrols, lady checkers and professional housekeeping across Uttarakhand.',
+    path: '/services',
+    jsonLd: [servicesSchema],
+  });
+
   return (
     <div className="pt-20">
       <Services />

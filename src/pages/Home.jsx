@@ -3,6 +3,8 @@ import Hero from '../components/Hero';
 import Testimonials from '../components/Testimonials';
 import { Award, BadgeCheck, Clock, Settings, FileCheck, MapPin, Building2 } from 'lucide-react';
 import { whyChooseUs, governmentClients } from '../data/mock';
+import { useSeo } from '../hooks/useSeo';
+import { localBusinessSchema, faqSchema } from '../data/structuredData';
 
 const iconMap = {
   Award,
@@ -14,6 +16,14 @@ const iconMap = {
 };
 
 const Home = () => {
+  useSeo({
+    title: 'Shoolin Security Services | Security Agency in Dehradun, Uttarakhand',
+    description:
+      'Shoolin Security Services - ISO 9001:2015 certified, PSARA licensed security agency in Dehradun, Uttarakhand. Ex-military security guards, VIP protection, mobile patrols and housekeeping. Get a free quote today.',
+    path: '/',
+    jsonLd: [localBusinessSchema, faqSchema],
+  });
+
   return (
     <div>
       <Hero />
@@ -29,7 +39,7 @@ const Home = () => {
               Government & Institutional Clients
             </h2>
             <p className="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed">
-              We deploy high-quality and advanced security equipment to ensure comprehensive protection across all client sites.
+              Proud to serve leading government and institutional organizations across Uttarakhand
             </p>
           </div>
           
